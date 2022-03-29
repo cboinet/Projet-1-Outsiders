@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    color: var(--white);
+}
+
+
+
+main {
+    padding: 0.5%;
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 80vw;
+    color: var(--white);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+}
+
+
+/*Section 1*/
+.carousel ul {
+    width: 88vw;
+    margin-left: 1vw;
+    padding-top: 5%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.carousel li {
+    width: 80vw;
+    height: auto;
+    padding: 5%;
+    padding-bottom: 10vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+h1 {
+    width: 80vw;
+    background-image: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
+    font-weight: 500;
+    text-shadow: 2px 2px 20px var(--black);
+}
+
+h2 {
+    margin-top: 0%;
+    text-align: center;
+}
+
+.card-picture,
+.card-picture2 {
+    object-fit: cover;
+}
+
+
+.album-card:hover {
+    display: block;
+
+    transition: 0.7s;
+
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+/*Section 2*/
+.album-list {
+    background-color: rgba(88, 88, 88, 0.5);
+
+    width: 90vw;
+    margin-top: 10vh;
+
+}
+
+
+.full-album {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-bottom: 20%;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.album-pic {
+    object-fit: cover;
+}
+
+.text-album-card {
+    width: 100%;
+    margin-left: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    display: block;
+}
+
+#image1,
+#image2,
+#image3,
+#image4 {
+    display: none;
+}
+
+.button {
+    padding: 2%;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 0.12em;
+    border: solid var(--white);
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    transition: 0.7s;
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    z-index: 1;
+}
+.button-box{
+    margin: 3vh;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-background);
+    border: solid var(--white) 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: solid var(--hover) 1px;
+}
+
+a {
+    background-color: transparent;
+}
+
+@media screen and (max-width : 767px) {
+
+    h1 {
+        padding-bottom: 5%;
+        padding-top: 10%;
+        text-align: center;
+        background: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
+        width: 99vw;
+    }
+
+    .card-picture2 {
+        display: none;
+    }
+
+    .text-album-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .back-img {
+        background: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
+        width: 99vw;
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .carousel li {
+        width: 80vw;
+    }
+
+    .album-list {
+        width: 60vw;
+
+        margin-left: 16vw;
+        background-color: rgba(88,88,88, 0.5 );
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-top: -7%;
+        text-align: center;
+    }
+
+    h1,
+    button {
+        margin-left: 10%;
+    }
+
+    .text-album-card {
+        margin-left: 3vw;
+    }
+
+    .card-picture2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .full-album {
+        width: 60vw;
+        height: 40vh;
+        padding-top: 4vh;
+    }
+
+    .flex {
+        margin-left: 10vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .button-box{
+        margin: 6vh;
+        margin-left: 54vw;
+    }
+}

@@ -1,0 +1,93 @@
+De la ligne 5 à la ligne 60 se trouve la navbar
+De la ligne 64 à 86 se trouve le footer (réseau sociaux + player)
+De la ligne 91 à 92 se trouve le lien du script JS pour le menu Hamburger
+
+<!-- DEBUT DE LA NAVBAR -->
+    <!-- NAVBAR MOBILE -->
+
+    <div class="mobile_navbar">
+
+        <div class="navbar">
+            <img src="../assets/img/projet1-logo.png" alt="">
+
+            <div id="links">
+
+                <a href="index.html">Home</a>
+                <a href="contact.html">Biography</a>
+                <a href="discography.html">Discography</a>
+                <a href="tour.html">Tour</a>
+                <a href="contact.html">Contact us</a>
+
+                <div id="socialmedia">
+
+                    <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+
+
+            <a href="#" id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- NAVBAR DESKTOP -->
+
+
+    <div class="desktop_navbar">
+
+
+        <ul>
+
+
+            <div class="desktop_logo">
+                <img src="./assets/img/projet1-logo.png" alt="">
+            </div>
+
+            <div class="desktop_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Biography</a></li>
+                <li><a href="#">Discography</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </ul>
+    </div>
+<!-- FIN DE LA NAVBAR -->
+
+---------------------------------------------------------------------------
+
+<!-- DEBUT DU FOOTER et PLAYER -->
+
+
+
+    <footer>
+
+        <div class="socialmedia_desktop">
+
+            <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+        </div>
+
+        <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
+        <section id="player">
+            <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
+            <div class="titlesong">{out}Siders - Track 1</div>
+        </section>
+    </footer>
+
+    <!-- FIN DU FOOTER et PLAYER -->
+
+</body>
+
+
+<!-- LIEN DU SCRIPT HAMBURGER -->
+<script src="./assets/javascript/hamburger.js"></script>
+

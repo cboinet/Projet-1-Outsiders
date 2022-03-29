@@ -1,0 +1,319 @@
+/* CODE COULEUR :
+
+GRIS HAMBURGER : #4c4c4c
+GRIS NAVBAR / FOOTER : #1c1c1c
+JAUNE : #e6e458
+
+Point de rupture : 768 px */
+
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* background-image: url('../img/background.jpg'); */
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10rem;*/
+    background-color: black;
+}
+
+body>header {
+    z-index: 3;
+}
+
+
+/********************************OUTSIDER*************************************************************************/
+.titrePage {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    position: relative;
+    transform: translateY(200px);
+    transition: 1s all ease;
+
+
+}
+
+.titrePage.active {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+    transform: translateY(0px);
+
+}
+
+.bioGrpOutsider {
+    color: white;
+    background-color: #1c1c1c;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.backgroundPage {
+    background-image: url("../img/background-index.jpg");
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translatex(0px);
+    transition: 1s all ease;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 7rem;
+    align-items: center;
+    color: white;
+}
+
+.backgroundPage.active {
+    background-image: url("../img/background-index.jpg");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translatex(-2500px);
+    transition: 1s all ease;
+}
+
+body>article {
+    margin-top: 2rem;
+}
+
+.arrow-down {
+    margin-bottom: 1rem;
+    opacity: 50%;
+    color: #1c1c1c;
+}
+
+
+/*********************GLOBAL CORP*************************************************************************************/
+body>article>section:nth-child(1)>div>img {
+    width: 100%;
+}
+
+body>article>section:nth-child(1)>.bioBloc1Outsider {
+    width: 100%;
+}
+
+.grpComplet {
+    width: 100%;
+
+}
+
+body>article>section:nth-child(n)>div {
+    width: 76%;
+    background-color: #1c1c1c;
+
+}
+
+body>article>section:nth-child(n)>div>div>p {
+
+    color: white;
+    background-color: #1c1c1c;
+    padding: 30px;
+}
+
+body>article>section:nth-child(n)>h2 {
+    padding-top: 10rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+body>article>section:nth-child(n) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bioGrp {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c1c1c;
+
+}
+
+.titreAndP {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.bioBloc2Outsider {
+    margin-bottom: 4rem;
+    position: relative;
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.bioBloc2Outsider.active {
+
+    margin-bottom: 4rem;
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.bioBloc1Outsider {
+
+    margin-bottom: 4rem;
+    position: relative;
+    transform: translateX(15%);
+    opacity: 0;
+    transition: 1s all ease;
+
+}
+
+.bioBloc1Outsider.active {
+
+    margin-bottom: 4rem;
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/********** media supp 800 case article ***********/
+@media screen and (min-width : 780px) {
+
+    body>article>section:nth-child(2n+1) {
+        display: flex;
+        flex-direction: row;
+        margin-left: 5rem;
+
+    }
+
+    body>article>section:nth-child(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 5rem;
+
+    }
+
+    .bioBloc1Outsider {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    .bioBloc2Outsider {
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 4rem;
+    }
+
+    .scroller {
+        height: 70%;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .scroller section {
+        scroll-snap-align: start;
+    }
+
+    .bioBloc2Outsider {
+        margin-bottom: 4rem;
+        position: relative;
+        transform: translateX(-30%);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+
+    .bioBloc2Outsider.active {
+
+        margin-bottom: 4rem;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .bioBloc1Outsider {
+
+        margin-bottom: 4rem;
+        position: relative;
+        transform: translateX(30%);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+
+    .bioBloc1Outsider.active {
+
+        margin-bottom: 4rem;
+        transform: translateX(0px);
+        opacity: 1;
+        display: flex;
+        justify-content: end;
+    }
+
+    .titreAndP {
+        width: 70%;
+    }
+
+    .grpComplet {
+        width: 60%;
+    }
+
+    .bioGrp {
+        width: 22%;
+    }
+
+    body>article>section:nth-child(1) {
+        margin-left: 0rem;
+    }
+
+    body>article>section:nth-child(1)>div>img {
+        position: absolute;
+    }
+
+    body>article>section:nth-child(1)>div>div {
+        z-index: 1;
+        margin-bottom: 20%;
+    }
+
+    body>article>section:nth-child(1)>div>div>h2 {
+        background-color: initial;
+    }
+
+    body>article>section:nth-child(1)>div>div>p {
+        background-color: initial;
+    }
+
+    body>article>section:nth-child(1)>div>div {
+        width: 40%;
+    }
+
+    .arrow-down {
+        margin-bottom: 5rem;
+    }
+
+}
+
+body>article>section:nth-child(1) {
+    width: 100%;
+}
+
+/************************/
+.scroller {
+    height: 70%;
+    overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.scroller section {
+    scroll-snap-align: start;
+}

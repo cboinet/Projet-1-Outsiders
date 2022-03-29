@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,200;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color : rgb(105, 104, 104);
+    --main-background : rgb(28,28,28);
+    --hover : rgb(230,228,88);
+    --white : hsl(0, 0%, 100%);
+    --font-size-p : 1rem;
+    --line-height : 1.5;
+    --font-family : 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    color : var(--white);
+}
+
+.outsiders_tour, 
+.outsiders_merch,
+.tour_dates, 
+.merch_clothing, 
+.merch_music,
+.tour_dates div, 
+.merch_clothing div, 
+.merch_music div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outsiders_tour, .outsiders_merch{
+    margin : 4rem 2rem;
+}
+
+.outsiders_merch{
+    background-color:var(--primary-color);
+    padding: 2rem;
+}
+
+.tour_presentation, .tour_dates, .merch_clothing, .merch_music{
+    padding : 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.tour_presentation h2, .outsiders_merch h2{
+    padding : 0.8rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.tour_presentation h2 {
+    margin-bottom: 3rem;
+}
+
+.tour_presentation>p{
+    padding : 0.8rem;
+    line-height: var( --line-height);
+    font-size: var( --font-size-p)
+}
+
+.tour_dates div{
+    padding : 0.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.tour_dates div h3,input{
+    padding : 0.5rem;
+    text-align: center;
+}
+
+.buy_btn{
+    border-radius:0.15em;
+    border-style: solid;
+    background-color: var(--main-background);
+    color: var( --white);
+}
+
+.buy_btn:hover{
+    border-color: var(--hover) ;
+    cursor : pointer;
+    transition: 0.6s;
+}
+
+.merch_clothing div h3, .merch_music div h3{
+    padding : 0.2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+
+.merch_clothing div, .merch_music div{
+    margin-bottom: 1rem;
+}
+
+.merch_clothing div input, .merch_music div input{
+     margin-top: 0.8rem;
+}
+
+.outsiders_merch img {
+    width: 200px;
+    height: 200px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 0.60rem;
+}
+
+footer {
+    margin-bottom: 4rem;
+}
+  
+@media screen and (min-width: 768px){ /* limite à partir de laquelle s'applique et au delà*/
+   
+    .tour_dates,.merch_clothing,.merch_music{
+        flex-direction: row;
+    }    
+    
+    h1{
+        font-size: 5.5rem;
+    }
+
+    .tour_presentation h2, .outsiders_merch h2{
+        font-size: 3rem;
+    }
+
+    .tour_dates div, .merch_clothing div, .merch_music div{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .tour_dates {
+        flex-wrap: wrap;
+    }
+
+    .outsiders_merch img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 950px){ /* limite à partir de laquelle s'applique et au delà*/
+    .outsiders_merch img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .outsiders_tour, .outsiders_merch{
+        margin : 4rem 6rem;
+    }
+}
+
+
+@media screen and (min-width: 1215px){ 
+    .tour_dates {
+        flex-wrap: nowrap;
+    }
+
+    .tour_dates div {
+        flex-direction: row;
+    }
+
+    .outsiders_merch img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .outsiders_tour, .outsiders_merch{
+        margin : 4rem 2.6rem;
+    }
+}

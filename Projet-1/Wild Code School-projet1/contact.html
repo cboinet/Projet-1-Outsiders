@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_contact.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap"
+        rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="/assets/img/projet1-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Outsiders | Contact Us</title>
+</head>
+
+<body>
+
+    <div class="mobile_navbar">
+
+        <div class="navbar">
+            <img src="../assets/img/projet1-logo.png" alt="">
+
+            <div id="links">
+
+                <a href="index.html">Home</a>
+                <a href="biographie.html">Biography</a>
+                <a href="discography.html">Discography</a>
+                <a href="tour.html">Tour</a>
+                <a href="contact.html">Contact us</a>
+
+                <div id="socialmedia">
+
+                    <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+
+
+            <a href="#" id="icon">
+                <i class="fa-solid fa-basket-shopping"></i>
+
+                <i class="fa-solid fa-bars"></i>
+
+            </a>
+        </div>
+
+    </div>
+
+    <!-- NAVBAR DESKTOP -->
+
+
+    <div class="desktop_navbar">
+
+        <div class="desktop_links">
+
+            <ul>
+
+
+
+                <!-- <img src="./assets/img/projet1-logo.png" class="desktop_logo" alt=""> -->
+
+
+                <!-- <div class="desktop_links"> -->
+                <li><img src="./assets/img/projet1-logo.png" class="desktop_logo" alt=""></li>
+                <li style="margin-left: 20%;"><a href="index.html">Home</a></li>
+                <li><a href="biographie.html">Biography</a></li>
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </li>
+                <!-- </div> -->
+
+
+            </ul>
+        </div>
+    </div>
+    <!-- FIN DE LA NAVBAR -->
+    <div class="contact_us">
+        <h1>CONTACT&nbsp&nbspUS</h1>
+    </div>
+    <div>
+        <h1 class="form_title">Fill in the form below to contact the band</h1>
+    </div>
+    <form id="contactForm">
+        <div class="bloc_a">
+            <div class="group_input">
+                <label class="label1">Firstname</label>
+                <input type="text" name="firstname" id="firstname_input" placeholder="John">
+            </div>
+            <div class="group_input">
+                <label class="label1">Lastname</label>
+                <input type="text" name="lastname" id="lastname_input" placeholder="Bisham">
+            </div>
+        </div>
+        <div class="bloc_b">
+            <div class="group_input">
+                <label class="label1">Email</label>
+                <input type="email" name="email" id="email_input" placeholder="johnbisham@contact.com">
+            </div>
+            <div class="group_input">
+                <label class="label2" for="message">Your message</label>
+                <textarea id="message" name="message" placeholder="Your message..."></textarea>
+            </div>
+        </div>
+        <div class="bloc_c">
+            <div class="group_input">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Check to subscribe to the newsletter </label>
+            </div>
+            <div class="group_input">
+                <button type="button" data-modal-target="#modal">Send a mail</button>
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Message sent ! A band member will answer you in the next 48 hours.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+        </div>
+    </form>
+    <!-- DEBUT DU FOOTER et PLAYER -->
+
+
+    <footer>
+
+        <div class="socialmedia_desktop">
+
+            <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+        </div>
+
+        <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
+        <section id="player">
+            <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
+            <div class="titlesong">{out}Siders - Track 1</div>
+        </section>
+    </footer>
+    <script src="./assets/javascript/hamburger.js"></script>
+    <script src="./assets/javascript/contact.js"></script>
+    <!-- FIN DU FOOTER et PLAYER -->
+</body>
+
+
+</html>
